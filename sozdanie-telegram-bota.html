@@ -123,7 +123,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">bot</span> <span class="o">=</span> <span class="n">telebot</span><span class="o">.</span><span class="n">TeleBot</span><span class="p">(</span><span class="s1">&#39;ваш токен&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Напишем декоратор <a href="https://habr.com/ru/users/bot/">bot</a>.message_handler(), с помощью которого наш бот будет реагировать на команду <code>/start</code>. Для этого в круглых скобках пишем <code>commands=['start']</code>. В итоге у нас должно получиться это:</p>
+<p>Напишем декоратор <code>@bot.message_handler()</code>, с помощью которого наш бот будет реагировать на команду <code>/start</code>. Для этого в круглых скобках пишем <code>commands=['start']</code>. В итоге у нас должно получиться это:</p>
 <div class="highlight"><pre><span></span><code><span class="nd">@bot</span><span class="o">.</span><span class="n">message_handler</span><span class="p">(</span><span class="n">commands</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;start&#39;</span><span class="p">])</span>
 </code></pre></div>
 
