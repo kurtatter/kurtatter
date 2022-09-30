@@ -1,136 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <title>Kurtatter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Pelican" />
-        <title>Kurtatter - Linux</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <!-- twitter card metadata -->
+        <!-- OG Tags -->
+<meta property="og:url" content="/category/Linux"/>
+<meta property="og:title" content="Kurtatter | Linux" />
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["/theme/css/icons.data.svg.css", "/theme/css/icons.data.png.css", "/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
 </head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Kurtatter</a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/linux.html">Linux</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <h1><a href="/">Kurtatter's Blog</a></h1>
+            <a href="#menu" id="menu-link">more stuff</a>
+            <nav id="menu">
+                <ul>
+                            <li class="active"><a href="/category/linux.html">Linux</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+<div class="page-title">
+    <h1>Linux</h1>
+</div>
+<div class="articles">
+        <ol>
+            <li>
                 <article>
-                    <h1 class="entry-title"><a href="/tmux-guide.html">tmux краткий справочник</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2022-09-30T21:20:00+03:00">
-                Published: Fri 30 September 2022
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/sam-flynn.html">Sam Flynn</a>
-        </address>
-<p>In <a href="/category/linux.html">Linux</a>.</p>
-<p>tags: <a href="/tag/linux.html">linux</a> <a href="/tag/tmux.html">tmux</a> </p>
-</footer><!-- /.post-info --><p><code>Tmux</code> - терминальный мультиплексор.</p>
-<p>Запусть новую сессию под названием <code>test</code>:</p>
-<div class="highlight"><pre><span></span><code>tmux new-session -s <span class="nb">test</span>
-</code></pre></div>
-
-<p>Основные команды тимакса начинаются с комбинации клавиш <code>ctrl+B</code> и затем название команды. Например</p>
-<p>Создать новое окно <code>ctrl+b C</code></p>
-<p>Первое окно шло под номером 0, второе окно уже идет под номером 1</p>
-<p>Переключить в окно 0 <code>ctrl+b 0</code></p>
-<p>Закрыть окно <code>ctrl+b &amp;</code></p>
-<p>Разобъем окно на два вертикальных <code>ctrl+b %</code></p>
-<p>Переключиться на левое окно <code>ctrl+b Left</code></p>
-<p>Разбить окно горизонтально <code>ctrl+b ""</code></p>
-<p>Отсоединение от контекста <code>ctrl+b d</code> </p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>detached <span class="o">(</span>from session <span class="nb">test</span><span class="o">)]</span>
-</code></pre></div>
-
-<p>Присоединится к сессии по названию </p>
-<div class="highlight"><pre><span></span><code>tmux attach -t <span class="nb">test</span>
-</code></pre></div>
-
-<p>Посмотреть список сессий </p>
-<div class="highlight"><pre><span></span><code>tmux ls
-</code></pre></div>
-
-<p>Убить все сессии</p>
-<div class="highlight"><pre><span></span><code>tmux kill-server
-</code></pre></div>
-
-<p>Убить сессию <code>test2</code></p>
-<div class="highlight"><pre><span></span><code>tmux kill-session -t test2
-</code></pre></div>
-
-<hr>
-<p>Настройки тимакс можно редактировать в файлике <code>vim ~/.tmux.conf</code></p>
-<p>Изменить стандартную комбинация на <code>ctrl+q</code> </p>
-<div class="highlight"><pre><span></span><code>set-option -g prefix C-q
-</code></pre></div>
-
-<p>Включить мышку, также с помощью нее мы сможем менять границы каждого окна просто смещая ее мышкой</p>
-<div class="highlight"><pre><span></span><code><span class="nb">set</span> -g mouse on
-</code></pre></div>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/shell-translate.html" rel="bookmark"
-                           title="Permalink to Утилита для перевода в Линуксе">Утилита для перевода в Линуксе</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2022-09-30T20:50:00+03:00">
-                Published: Fri 30 September 2022
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/sam-flynn.html">Sam Flynn</a>
-        </address>
-<p>In <a href="/category/linux.html">Linux</a>.</p>
-<p>tags: <a href="/tag/linux.html">linux</a> <a href="/tag/translate.html">translate</a> </p>
-</footer><!-- /.post-info -->                <p>Для использования данной утилиты достаточно выделить слово или текст на английском, нажать заданную нами же комбинацию клавиш и появиться полупрозрачное уведомление с переводом</p>
-<hr>
-<p>Утилита взята с <a href="https://github.com/skodnik/useful_linux_scripts/">данного</a> архива Github и вдохновлена <a href="https://www.youtube.com/watch?v=YSVB7y_EDRI">этим</a> видео</p>
-<h2>Создание утилиты</h2>
-<p>Для создания утилиты нам нужно создать скрипт на языке bash. Но для начала нам нужно …</p>
-                <a class="readmore" href="/shell-translate.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
+                    <footer>
+                         <p>
+                            <time datetime="2022-09-30 21:20:00+03:00">
+                                <script>document.write(moment('2022-09-30 21:20:00+03:00').format('LL'));</script>
+                            </time>
+                                    in <a href="/category/linux.html"><span class="category-tag">Linux</span></a>
+                        </p>
+                    </footer>
+                    <header>
+                        <a href="/tmux-guide.html">
+                            <h2>tmux краткий справочник</h2>
+                        </a>
+                    </header>
+                    <div class="summary"> </div>
+                    <div class="tags">
+                        <ul class="tags">
+                            <li><a href="/tag/linux.html" class="tag">linux</a></li>
+                            <li><a href="/tag/tmux.html" class="tag">tmux</a></li>
                         </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
+                    </div>
+                    <a href="/tmux-guide.html">
+                        <p class="readmore">Read more...</p>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <footer>
+                         <p>
+                            <time datetime="2022-09-30 20:50:00+03:00">
+                                <script>document.write(moment('2022-09-30 20:50:00+03:00').format('LL'));</script>
+                            </time>
+                                    in <a href="/category/linux.html"><span class="category-tag">Linux</span></a>
+                        </p>
+                    </footer>
+                    <header>
+                        <a href="/shell-translate.html">
+                            <h2>Утилита для перевода в Линуксе</h2>
+                        </a>
+                    </header>
+                    <div class="summary"> </div>
+                    <div class="tags">
+                        <ul class="tags">
+                            <li><a href="/tag/linux.html" class="tag">linux</a></li>
+                            <li><a href="/tag/translate.html" class="tag">translate</a></li>
                         </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+                    </div>
+                    <a href="/shell-translate.html">
+                        <p class="readmore">Read more...</p>
+                    </a>
+                </article>
+            </li>
+        </ol>
+        
+</div>                <footer>
+                    <div class="icons">
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> Sam Flynn</p>
+                </footer>
+        </div>
 </body>
 </html>
