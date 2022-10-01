@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Kurtatter</title>
+          <title>Kurtatter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="imgs/logo.jpg">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="markdown краткий справочник">
+<meta name="twitter:description" content="">
         <!-- OG Tags -->
+<meta property="og:url" content="/markdown-guide.html"/>
+<meta property="og:title" content="Kurtatter | markdown краткий справочник" />
+<meta property="og:description" content="" />
         <!-- favicon -->
         <!-- moment.js for date formatting -->
         <script src="/theme/js/moment.js"></script>
@@ -34,6 +42,10 @@
                     });
             };
         </script>
+
+
+    <meta name="tags" content="markdown" />
+
 </head>
 <body>
     <div role="banner" id="masthead">
@@ -42,33 +54,29 @@
             <a href="#menu" id="menu-link">more stuff</a>
             <nav id="menu">
                 <ul>
-                            <li><a href="/category/linux.html">Linux</a></li>
+                            <li class="active"><a href="/category/linux.html">Linux</a></li>
                 </ul>
             </nav>
         </header>
     </div>
         <div class="page" role="main">
-<div class="page-title">
-        <h1>archives</h1>
-    </div>
-<div class="articles">
-    <ol>
-        <li>
-            <article>
-                <footer>
-                        <p>
-                        <time datetime="2022-10-01 10:30:00+03:00">
-                            <script>document.write(moment('2022-10-01 10:30:00+03:00').format('LL'));</script>
-                        </time>
-                                in <a href="/category/linux.html"><span class="category-tag">Linux</span></a>
-                    </p>
-                </footer>
-                <header>
-                    <a href="/markdown-guide.html">
-                        <h2>markdown краткий справочник</h2>
-                    </a>
-                </header>
-                <div class="summary"><p>Что такое Markdown <a href="https://lifehacker.ru/chto-takoe-markdown/">статья</a> из Лайфхакер</p>
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2022-10-01 10:30:00+03:00">
+                <script>document.write(moment('2022-10-01 10:30:00+03:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            markdown краткий справочник
+          </h2>
+        </header>
+      <div class="content">
+         <p>Что такое Markdown <a href="https://lifehacker.ru/chto-takoe-markdown/">статья</a> из Лайфхакер</p>
 <h3>Заголовок</h3>
 <div class="highlight"><pre><span></span><code><span class="gh"># Заголовок H1</span>
 <span class="gu">## Заголовок H2</span>
@@ -93,85 +101,86 @@
 
 <h3>Маркированные списки</h3>
 <div class="highlight"><pre><span></span><code><span class="k">-</span> Первый пункт.
-<span class="k">-</span> Второй пункт …</code></pre></div> </div>
-                <div class="tags">
-                    <ul class="tags">
-                        <li><a href="/tag/markdown.html" class="tag">markdown</a></li>
-                    </ul>
-                </div>
-                <a href="/markdown-guide.html">
-                    <p class="readmore">Read more...</p>
-                </a>
-            </article>
-        </li>
-        <li>
-            <article>
-                <footer>
-                        <p>
-                        <time datetime="2022-09-30 21:20:00+03:00">
-                            <script>document.write(moment('2022-09-30 21:20:00+03:00').format('LL'));</script>
-                        </time>
-                                in <a href="/category/linux.html"><span class="category-tag">Linux</span></a>
-                    </p>
-                </footer>
-                <header>
-                    <a href="/tmux-guide.html">
-                        <h2>tmux краткий справочник</h2>
-                    </a>
-                </header>
-                <div class="summary"><p><code>Tmux</code> - терминальный мультиплексор.</p>
-<p>Запусть новую сессию под названием <code>test</code>:</p>
-<div class="highlight"><pre><span></span><code>tmux new-session -s <span class="nb">test</span>
+<span class="k">-</span> Второй пункт.
+<span class="k">-</span> Третий пункт.
 </code></pre></div>
 
-<p>Основные команды тимакса начинаются с комбинации клавиш <code>ctrl+B</code> и затем название команды. Например</p>
-<p>Создать новое окно <code>ctrl+b C</code></p>
-<p>Первое окно шло под номером 0, второе окно уже идет под номером 1</p>
-<p>Переключить в окно 0 …</p> </div>
-                <div class="tags">
-                    <ul class="tags">
-                        <li><a href="/tag/linux.html" class="tag">linux</a></li>
-                        <li><a href="/tag/tmux.html" class="tag">tmux</a></li>
-                    </ul>
-                </div>
-                <a href="/tmux-guide.html">
-                    <p class="readmore">Read more...</p>
-                </a>
-            </article>
-        </li>
-        <li>
-            <article>
-                <footer>
-                        <p>
-                        <time datetime="2022-09-30 20:50:00+03:00">
-                            <script>document.write(moment('2022-09-30 20:50:00+03:00').format('LL'));</script>
-                        </time>
-                                in <a href="/category/linux.html"><span class="category-tag">Linux</span></a>
-                    </p>
-                </footer>
-                <header>
-                    <a href="/shell-translate.html">
-                        <h2>Утилита для перевода в Линуксе</h2>
-                    </a>
-                </header>
-                <div class="summary"><p>Для использования данной утилиты достаточно выделить слово или текст на английском, нажать заданную нами же комбинацию клавиш и появиться полупрозрачное уведомление с переводом</p>
-<hr>
-<p>Утилита взята с <a href="https://github.com/skodnik/useful_linux_scripts/">данного</a> архива Github и вдохновлена <a href="https://www.youtube.com/watch?v=YSVB7y_EDRI">этим</a> видео</p>
-<h2>Создание утилиты</h2>
-<p>Для создания утилиты нам нужно создать скрипт на языке bash. Но для начала нам нужно …</p> </div>
-                <div class="tags">
-                    <ul class="tags">
-                        <li><a href="/tag/linux.html" class="tag">linux</a></li>
-                        <li><a href="/tag/translate.html" class="tag">translate</a></li>
-                    </ul>
-                </div>
-                <a href="/shell-translate.html">
-                    <p class="readmore">Read more...</p>
-                </a>
-            </article>
-        </li>
-    </ol>
-</div>
+<h3>Нумерованные списки</h3>
+<div class="highlight"><pre><span></span><code><span class="k">1.</span> Первый пункт.
+<span class="k">2.</span> Второй пункт.
+<span class="k">3.</span> Третий пункт.
+</code></pre></div>
+
+<h3>Смешанный вложенный список</h3>
+<div class="highlight"><pre><span></span><code><span class="k">1.</span> Первый пункт.
+<span class="k">-</span> Первый подпункт.
+<span class="k">-</span> Второй подпункт.
+<span class="k">-</span> Третий подпункт.
+<span class="k">2.</span> Второй пункт.
+<span class="k">-</span> Первый подпункт.
+<span class="k">-</span> Второй подпункт.
+<span class="k">-</span> Третий подпункт.
+</code></pre></div>
+
+<h3>Горизонтальные линии</h3>
+<p>Каторый способ выбирать не имеет значения</p>
+<div class="highlight"><pre><span></span><code><span class="gu">***</span>
+<span class="gu">---</span>
+___
+</code></pre></div>
+
+<h3>Ссылка на сайт</h3>
+<div class="highlight"><pre><span></span><code>[<span class="nt">Лайфхакер</span>](<span class="na">lifehacker.ru</span>)
+</code></pre></div>
+
+<h3>Ссылка на изображение</h3>
+<div class="highlight"><pre><span></span><code>![<span class="nt">подпись</span>](<span class="na">ссылка_на_изображение</span>)
+</code></pre></div>
+
+<h3>Таблицы</h3>
+<div class="highlight"><pre><span></span><code>| раз | два | три |
+|:----|:----|:----|
+| раз | два | три |
+</code></pre></div>
+
+<h3>Задачи</h3>
+<div class="highlight"><pre><span></span><code><span class="k">- [ ]</span> Невыполненная задача
+<span class="k">- [ ]</span> Невыполненная задача
+<span class="k">- [X]</span> Выполненная задача
+</code></pre></div>
+
+<h3>Смайлики</h3>
+<p>Посмотреть коды можно <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">здесь</a>  ​</p>
+<div class="highlight"><pre><span></span><code>:kissing_heart:
+</code></pre></div>
+
+<h3>Код</h3>
+<div class="highlight"><pre><span></span><code><span class="sb">`Какой-то очень важный код.`</span>
+​```
+Целый абзац очень важного кода.
+И ещё строка.
+И ещё.
+​```
+
+​```python
+Целый абзац очень важного кода.
+И ещё строка.
+И ещё.
+​```
+Например:
+​```markdown
+Целый абзац очень важного кода.
+И ещё строка.
+И ещё.
+​```
+</code></pre></div>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+    </article>
+  </div>
+<!-- end article -->
                 <footer>
                     <div class="icons">
                     </div>
